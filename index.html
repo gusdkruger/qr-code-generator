@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QR Code Generator</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <h2>QR Code Generator</h2>
+            <h2>Senac Tech</h2>
+        </header>
+        <main>
+            <form id="qr-form">
+                <label for="input-field">Generate your QR code</label>
+                <input id="input-field" type="text" placeholder="Type your text or URL" minlength="1" maxlength="255" required>
+                <button type="submit" id="button">Generate</button>
+            </form>
+            <div id="qr-container">
+                <img id="qr-code" src="" alt="">
+            </div>
+        </main>
+    </body>
+    <script src="./main.js"></script>
+</html>
