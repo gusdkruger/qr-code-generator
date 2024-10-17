@@ -17,7 +17,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
     height: 60px;
     background-color: var(--light-cyan);
@@ -43,7 +43,8 @@ main {
     padding: 20px;
     border-radius: 15px;
     background-color: var(--light-cyan);
-    width: 350px;
+    width: 82.5%;
+    max-width: 350px;
 }
 
 #qr-form label {
@@ -81,18 +82,21 @@ main {
 }
 
 #qr-container {
-    display: none;
-}
-
-#qr-container.generated {
+    opacity: 0;
     display: flex;
-    width: 350px;
-    height: fit-content;
+    width: 82.5%;
+    max-width: 350px;
     padding: 20px;
     border-radius: 15px;
     background-color: var(--light-cyan);
+    margin-bottom: 50px;
+}
+
+#qr-container.fade-in {
+    opacity: 1;
+    transition: opacity 0.75s ease;
 }
 
 #qr-code {
-    width: 350px;
+    width: 100%;
 }

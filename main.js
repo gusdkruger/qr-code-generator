@@ -10,7 +10,10 @@ form.addEventListener("submit", event => {
     qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${text}`;
 
     qrCode.addEventListener("load",() => {
-        container.classList.add("generated");
+        container.classList.add("fade-in");
         button.innerText = "Generated!";
+        setTimeout(() => {
+            button.innerText = "Generate";
+        }, 3500);
     })
 });
