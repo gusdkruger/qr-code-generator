@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Generate a QR code">
+        <meta name="description" content="QR Code Generator">
         <link rel="icon" type="image/x-icon" href="./favicon.png">
         <title>QR Code Generator</title>
         <link rel="stylesheet" href="./style.css">
@@ -14,9 +14,9 @@
         </header>
         <main>
             <form id="qr-form">
-                <label for="input-field">Generate your QR code</label>
-                <input id="input-field" type="text" placeholder="Type your text or URL" minlength="1" maxlength="255" required>
-                <button type="submit" id="button">Generate</button>
+                <label for="qr-input-field">Generate your QR code</label>
+                <input class="custom-outline" id="qr-input-field" type="text" placeholder="Type your text or URL" minlength="1" maxlength="255" required>
+                <button class="custom-outline" type="submit" id="qr-form-btn">Generate</button>
             </form>
             <div id="qr-container">
                 <img id="qr-code" src="" alt="">
