@@ -82,7 +82,7 @@ form input {
     border: none;
     cursor: pointer;
     color: var(--blue);
-    transition: background-color 0.5s ease-out, color 0.25s ease-out;
+    transition: background-color 0.5s ease-out, color 0.25s ease-out, outline 0.05s;
 
     &:hover {
         background-color: var(--green);
