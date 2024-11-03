@@ -2,6 +2,7 @@
     --blue: #009FFC;
     --green: #23E7A9;
     --white: #F5F5F5;
+    --white: #FFFFFF;
 }
 
 * {
@@ -19,15 +20,14 @@ body {
 header {
     display: flex;
     justify-content: center;
-    padding: 0 20px;
+    align-items: center;
     height: 60px;
     background-color: var(--blue);
-    align-items: center;
     box-shadow: 2px 2px 10px 0 var(--blue);
 }
 
-header h2 {
-    font-size: 24px;
+header h1 {
+    font-size: 26px;
 }
 
 main {
@@ -55,7 +55,7 @@ form label {
     text-align: center;
 }
 
-form input {
+#form__input {
     padding: 7px;
     background-color: transparent;
     border: 2px solid var(--white);
@@ -66,16 +66,7 @@ form input {
     }
 }
 
-.custom-outline {
-    outline: 0px solid var(--green);
-    transition: outline 0.05s;
-
-    &:focus {
-        outline-width: 4px;
-    }
-}
-
-#qr-form-btn {
+#form__submit {
     padding: 7px;
     background-color: var(--white);
     border-radius: 5px;
@@ -90,7 +81,16 @@ form input {
     }
 }
 
-#qr-container {
+.custom-outline {
+    outline: 0px solid var(--green);
+    transition: outline 0.05s;
+
+    &:focus {
+        outline-width: 4px;
+    }
+}
+
+#container {
     opacity: 0;
     width: 82.5%;
     max-width: 350px;
@@ -98,13 +98,13 @@ form input {
     border-radius: 5px;
     background-color: var(--blue);
     box-shadow: 2px 2px 10px 0 var(--blue);
+}
+
+#container.fade-in {
+    opacity: 1;
     transition: opacity 0.75s ease;
 }
 
-#qr-container.fade-in {
-    opacity: 1;
-}
-
-#qr-code {
+#container__qr-code {
     width: 100%;
 }
