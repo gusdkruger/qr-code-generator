@@ -9,17 +9,14 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <header>
-            <h1>QR Code Generator</h1>
-        </header>
         <main>
-            <form id="form">
-                <label for="form__input">Generate your QR code</label>
-                <input class="custom-outline" id="form__input" type="text" placeholder="Type your text or URL" minlength="1" maxlength="255" required>
-                <button class="custom-outline" id="form__submit" type="submit">Generate</button>
+            <form id="qr-form">
+                <label for="qr-form__input">Generate your QR code</label>
+                <input class="custom-outline" id="qr-form__input" type="text" placeholder="Type your text or URL" minlength="1" maxlength="255" required>
+                <button class="custom-outline" id="qr-form__submit" type="submit">Generate</button>
             </form>
-            <div id="container">
-                <img id="container__qr-code" src="" alt="">
+            <div id="qr-container">
+                <img id="qr-container__img" src="" alt="">
             </div>
         </main>
     </body>

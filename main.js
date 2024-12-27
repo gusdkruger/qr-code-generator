@@ -1,8 +1,8 @@
-const form = document.getElementById("form");
-const input = document.getElementById("form__input");
-const button = document.getElementById("form__submit");
-const container = document.getElementById("container");
-const qrCode = document.getElementById("container__qr-code");
+const form = document.getElementById("qr-form");
+const input = document.getElementById("qr-form__input");
+const button = document.getElementById("qr-form__submit");
+const container = document.getElementById("qr-container");
+const qrCode = document.getElementById("qr-container__img");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -10,10 +10,6 @@ form.addEventListener("submit", (event) => {
     if(text) {
         button.innerText = "Generating...";
         qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${text}`;
-    }
-    else {
-        alert("Input text must not be empty!");
-        input.value = "";
     }
 });
 

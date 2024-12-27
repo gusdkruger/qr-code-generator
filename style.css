@@ -1,7 +1,6 @@
 :root {
-    --blue: #009FFC;
+    --blue: #007AC2;
     --green: #23E7A9;
-    --white: #F5F5F5;
     --white: #FFFFFF;
 }
 
@@ -13,21 +12,8 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, var(--green), var(--blue));
+    background-image: linear-gradient(to bottom right, var(--green), var(--green), var(--blue));
     min-height: 100vh;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    background-color: var(--blue);
-    box-shadow: 2px 2px 10px 0 var(--blue);
-}
-
-header h1 {
-    font-size: 26px;
 }
 
 main {
@@ -55,7 +41,7 @@ form label {
     text-align: center;
 }
 
-#form__input {
+#qr-form__input {
     padding: 7px;
     background-color: transparent;
     border: 2px solid var(--white);
@@ -66,7 +52,7 @@ form label {
     }
 }
 
-#form__submit {
+#qr-form__submit {
     padding: 7px;
     background-color: var(--white);
     border-radius: 5px;
@@ -90,7 +76,7 @@ form label {
     }
 }
 
-#container {
+#qr-container {
     opacity: 0;
     width: 82.5%;
     max-width: 350px;
@@ -100,11 +86,11 @@ form label {
     box-shadow: 2px 2px 10px 0 var(--blue);
 }
 
-#container.fade-in {
+#qr-container.fade-in {
     opacity: 1;
     transition: opacity 0.75s ease;
 }
 
-#container__qr-code {
+#qr-container__img {
     width: 100%;
 }
